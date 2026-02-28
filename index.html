@@ -1047,6 +1047,125 @@
         .animate {
             animation: fadeIn 1s ease forwards;
         }
+
+        /* Skills Section - White Background */
+        #skills {
+            background-color: var(--light-color);
+            color: var(--text-color);
+            padding: 100px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        #skills .section-header h2 {
+            color: var(--primary-color);
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #skills .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        #skills .section-header p {
+            color: #4a5568;
+            text-align: center;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .skill-card {
+            background-color: var(--dark-color);
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-color);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .skill-card-header i {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+        }
+
+        .skill-card-header h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        .skill-row {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .skill-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        .skill-percentage {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .skill-bar-container {
+            width: 100%;
+            height: 10px;
+            background-color: #e2e8f0;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), #d4af37);
+            width: 0;
+            transition: width 1.5s cubic-bezier(0.1, 0, 0.2, 1);
+            border-radius: 20px;
+        }
     </style>
 </head>
 
@@ -1163,78 +1282,119 @@
                 <h2>Core Competencies</h2>
                 <p>A range of professional competencies in account management and digital marketing</p>
             </div>
-            <div class="skills-container"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
-                <!-- Category 1 -->
-                <div class="skill-category">
-                    <h3
-                        style="font-size: 1.6rem; color: var(--primary-color); margin-bottom: 25px; border-bottom: 1px solid rgba(10, 25, 47, 0.1); padding-bottom: 15px;">
-                        <i class="fas fa-tasks" style="margin-right: 10px;"></i> Account Management & Planning
-                    </h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li
-                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
-                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
-                            <span><strong>Account Management:</strong> High skill in extracting client requirements and
-                                managing
-                                expectations.</span>
-                        </li>
-                        <li
-                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
-                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
-                            <span><strong>Strategic Planning:</strong> Developing complete marketing plans based on
-                                market
-                                and competitors.</span>
-                        </li>
-                    </ul>
+            <div class="skills-grid">
+                <!-- Category 1: Account Management & Planning -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Account Management & Planning</h3>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Account Management</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Strategic Planning</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Client Expectations Management</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Category 2 -->
-                <div class="skill-category">
-                    <h3
-                        style="font-size: 1.6rem; color: var(--primary-color); margin-bottom: 25px; border-bottom: 1px solid rgba(10, 25, 47, 0.1); padding-bottom: 15px;">
-                        <i class="fas fa-chart-pie" style="margin-right: 10px;"></i> Platform Management & Analysis
-                    </h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li
-                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
-                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
-                            <span><strong>Platform Management:</strong> Professional page management, building digital
-                                identity
-                                and increasing engagement.</span>
-                        </li>
-                        <li
-                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
-                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
-                            <span><strong>Analysis & Metrics:</strong> Ability to read campaign data and analyze
-                                performance
-                                for continuous improvement.</span>
-                        </li>
-                    </ul>
+                <!-- Category 2: Platform Management & Analysis -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Platform Management & Analysis</h3>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Professional Page Management</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Analysis & Campaign Data</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Digital Identity Construction</span>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Category 3 -->
-                <div class="skill-category">
-                    <h3
-                        style="font-size: 1.6rem; color: var(--primary-color); margin-bottom: 25px; border-bottom: 1px solid rgba(10, 25, 47, 0.1); padding-bottom: 15px;">
-                        <i class="fas fa-user-friends" style="margin-right: 10px;"></i> Teamwork & Flexibility
-                    </h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li
-                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
-                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
-                            <span><strong>Flexibility:</strong> highly flexible personality in dealing with work
-                                pressure and market
-                                changes.</span>
-                        </li>
-                        <li
-                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
-                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
-                            <span><strong>Communication Skills:</strong> Managing work teams and direct professional
-                                interaction
-                                with clients.</span>
-                        </li>
-                    </ul>
+                <!-- Category 3: Teamwork & Flexibility -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fas fa-user-friends"></i>
+                        <h3>Teamwork & Flexibility</h3>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Work Pressure Flexibility</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Communication Skills</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Team Management</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1341,27 +1501,90 @@
                     style="color: var(--accent-color); font-size: 1.8rem; margin-bottom: 30px; border-left: 4px solid var(--accent-color); padding-left: 15px;">
                     Advertising Campaigns</h3>
                 <div class="projects-grid"
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                    <div class="project-card">
-                        <img src="ads/IMG_9088.PNG" alt="Ad Campaign"
-                            style="width: 100%; height: auto; display: block;">
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+                    <!-- Campaign 1 -->
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; overflow: hidden; height: 100%;">
+                        <div style="width: 100%; height: auto; background-color: #f1f5f9;">
+                            <img src="ads/1.jpeg" alt="Ad Campaign 1"
+                                style="width: 100%; height: auto; display: block; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                        </div>
+                        <div style="padding: 20px; direction: rtl; text-align: right; flex-grow: 1;">
+                            <h4
+                                style="color: var(--accent-color); margin-bottom: 10px; font-size: 1.1rem; font-weight: 700;">
+                                تحليل حملة التفاعل</h4>
+                            <p style="font-size: 0.95rem; line-height: 1.6; color: #4a5568;">
+                                الحمله الهدف منها تفاعل علي البوست. الميزانيه بسيطه جداً ومع ذلك عملت ريتش كويس اوي،
+                                وتكلفة لكل تفاعل كانت قليله جداً دا معناه ان الاستهداف كان صح اوي.
+                            </p>
+                            <p style="font-size: 0.95rem; line-height: 1.6; color: #4a5568; margin-top: 10px;">
+                                التكرار كان بيظهر مره واحده لشخص واحد يعني العميل فلوسه متحرقتش. الاعلان تفاعل معاه من
+                                نسبة الريتش ١٠٪ ودا كويس جداً لأن متوسط التفاعل من ٢٪ ل ٥٪. الاستهداف هنا كان محتوي
+                                تعليمي وللبيزنس اونرز واي حد عايز يبدأ مشروع ودا جمهوره قليل اصلا.
+                            </p>
+                        </div>
                     </div>
-                    <div class="project-card">
-                        <img src="ads/IMG_9089.PNG" alt="Ad Campaign"
-                            style="width: 100%; height: auto; display: block;">
+
+                    <!-- Campaign 2 -->
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; overflow: hidden; height: 100%;">
+                        <div style="width: 100%; height: auto; background-color: #f1f5f9;">
+                            <img src="ads/2.jpeg" alt="Ad Campaign 2"
+                                style="width: 100%; height: auto; display: block; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                        </div>
+                        <div style="padding: 20px; direction: rtl; text-align: right; flex-grow: 1;">
+                            <h4
+                                style="color: var(--accent-color); margin-bottom: 10px; font-size: 1.1rem; font-weight: 700;">
+                                تعزيز الانتشار والوصول</h4>
+                            <p style="font-size: 0.95rem; line-height: 1.6; color: #4a5568;">
+                                هنا انا زودت الانتشار والوصول، واغلبها كان من ناس مش فولوارز ودا معني ان جودة المحتوي
+                                بتاعي عاليه. التفاعل كان بزياده ضخمه.
+                            </p>
+                            <p
+                                style="font-size: 0.95rem; line-height: 1.6; color: #4a5568; margin-top: 10px; font-style: italic;">
+                                <strong>تحدي:</strong> عدد المتابعين الجدد كان قليل، ودا عرفت سببه وهشتغل عليه بعد كدا.
+                            </p>
+                        </div>
                     </div>
-                    <div class="project-card">
-                        <img src="ads/IMG_9770.PNG" alt="Ad Campaign"
-                            style="width: 100%; height: auto; display: block;">
+
+                    <!-- Campaign 3 -->
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; overflow: hidden; height: 100%;">
+                        <div style="width: 100%; height: auto; background-color: #f1f5f9;">
+                            <img src="ads/3.jpeg" alt="Ad Campaign 3"
+                                style="width: 100%; height: auto; display: block; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                        </div>
+                        <div style="padding: 20px; direction: rtl; text-align: right; flex-grow: 1;">
+                            <h4
+                                style="color: var(--accent-color); margin-bottom: 10px; font-size: 1.1rem; font-weight: 700;">
+                                معدل التفاعل العضوي</h4>
+                            <p style="font-size: 0.95rem; line-height: 1.6; color: #4a5568;">
+                                نسبة التفاعل للوصول ٥.٥ ودا معدل طبيعي جداً. وال استنتجناه ان الاورجانيك ريتش بدأ يسمع
+                                عندي جداً منغير تمويل حتي.
+                            </p>
+                        </div>
                     </div>
-                    <div class="project-card">
-                        <img src="ads/IMG_9771.PNG" alt="Ad Campaign"
-                            style="width: 100%; height: auto; display: block;">
+
+                    <!-- Campaign 4 -->
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; overflow: hidden; height: 100%;">
+                        <div style="width: 100%; height: auto; background-color: #f1f5f9;">
+                            <img src="ads/4.jpeg" alt="Ad Campaign 4"
+                                style="width: 100%; height: auto; display: block; border-bottom: 1px solid rgba(0,0,0,0.05);">
+                        </div>
+                        <div style="padding: 20px; direction: rtl; text-align: right; flex-grow: 1;">
+                            <h4
+                                style="color: var(--accent-color); margin-bottom: 10px; font-size: 1.1rem; font-weight: 700;">
+                                علاج التحدي بنمو المتابعين</h4>
+                            <p style="font-size: 0.95rem; line-height: 1.6; color: #4a5568;">
+                                وهنا التحدي ال كان عندي عالجته وزودت net followers بعد شهر واحد بس من المشكله. انا زودت
+                                الانتشار والوصول واغلبها كان من ناس مش فولوارز ودا معني ان جودة المحتوي بتاعي عاليه.
+                                التفاعل كان بزياده ضخمة، وحققت الهدف المطلوب.
+                            </p>
+                        </div>
                     </div>
-                    <div class="project-card">
-                        <img src="ads/IMG_9772.PNG" alt="Ad Campaign"
-                            style="width: 100%; height: auto; display: block;">
-                    </div>
+
                 </div>
             </div>
 
@@ -1438,8 +1661,7 @@
                         </div>
                         <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">التمكين بيخلي الموظفين يحسوا
                             ان الشركه شركتهم فيبدعوا او ان التيم دا عيلتهم ف يجتهدوا.</p>
-                    
-                        
+
                     </div>
 
                 </div>
@@ -1473,7 +1695,7 @@
                         <li style="margin-bottom: 8px;"><i class="fas fa-star"
                                 style="color: var(--accent-color); font-size: 0.8rem;"></i> Club Services Chair
                             (2025/2026)</li>
-                  </li>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1497,7 +1719,10 @@
                         <a href="https://wa.me/201155730844" class="social-link" title="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                     
+                        <a href="https://www.facebook.com/share/17yM9yS2Mf/?mibextid=wwXIfr" class="social-link"
+                            title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-bottom">
