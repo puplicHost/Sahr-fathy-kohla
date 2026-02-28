@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sahar Fathy Kahla - Account Manager & Social Media Specialist. Expert in brand identity, campaign management, and client account management.">
+    <meta name="theme-color" content="#217756">
+    <title>Sahar Fathy Kahla | Account Manager & Social Media Specialist</title>
+    <link rel="icon" href="fav.png" type="image/png">
+    <link rel="apple-touch-icon" href="fav.png">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQD2ZWDE9R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VQD2ZWDE9R');
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        :root {
+            --primary-color: #0a192f;
+            /* Navy Blue */
+            --secondary-color: #172a45;
+            /* Lighter Navy */
+            --accent-color: #c5a059;
+            /* Matte Gold */
+            --dark-color: #f8f9fa;
+            /* Light Gray Background */
+            --light-color: #ffffff;
+            /* White Section Background */
+            --text-color: #112240;
+            /* Dark Navy Text */
+            --card-bg: #ffffff;
+            /* White Cards */
+            --nav-bg: #0a192f;
+            /* Navy Navigation */
+            --border-color: #d4af37;
+            /* Gold/Border */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--dark-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--nav-bg);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ffffff;
+            /* White text for navy nav */
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links i {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+        }
+
+        .nav-links a:hover i {
+            transform: translateY(-2px);
+            transition: transform 0.3s ease;
+        }
+
+        /* Favicon styles */
+        .favicon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        /* Header Section */
+        header {
+            position: relative;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            overflow: hidden;
+        }
+
+        .parallax-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .parallax-layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.1s ease-out;
+        }
+
+        .parallax-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(197, 160, 89, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .parallax-circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            left: -100px;
+        }
+
+        .parallax-circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            right: 10%;
+        }
+
+        .parallax-circle-3 {
+            width: 150px;
+            height: 150px;
+            top: 50%;
+            left: 80%;
+        }
+
+        .parallax-circle-4 {
+            width: 250px;
+            height: 250px;
+            bottom: 20%;
+            left: 5%;
+        }
+
+        .parallax-shape {
+            position: absolute;
+            opacity: 0.1;
+        }
+
+        .parallax-shape-1 {
+            width: 100px;
+            height: 100px;
+            background: var(--accent-color);
+            transform: rotate(45deg);
+            top: 20%;
+            right: 15%;
+        }
+
+        .parallax-shape-2 {
+            width: 80px;
+            height: 80px;
+            background: var(--accent-color);
+            border-radius: 20px;
+            bottom: 30%;
+            left: 20%;
+        }
+
+        header .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .cta-btn {
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .primary-btn {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+        }
+
+        .secondary-btn {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .primary-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .secondary-btn:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        /* About Section */
+        .section {
+            padding: 100px 0;
+            background-color: var(--dark-color);
+        }
+
+        .section:nth-child(even) {
+            background-color: var(--light-color);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .stat-item {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            color: var(--text-color);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-category h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            color: var(--accent-color);
+        }
+
+        .skill-category h3 i {
+            font-size: 1.4rem;
+        }
+
+        .skill-item {
+            margin-bottom: 15px;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background-color: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+
+        /* Projects Section */
+        #projects {
+            background: linear-gradient(180deg, var(--dark-color) 0%, rgba(33, 119, 86, 0.95) 100%);
+            position: relative;
+        }
+
+        #projects::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(98, 181, 147, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(252, 237, 37, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card {
+            background: var(--light-color);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.05),
+                0 0 0 1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+            border: 1px solid rgba(20, 20, 20, 0.05);
+            position: relative;
+            will-change: transform;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-color), var(--accent-color));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+            transform-origin: left;
+        }
+
+        .project-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(252, 237, 37, 0.4),
+                0 0 30px rgba(252, 237, 37, 0.2);
+        }
+
+        .project-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .project-content {
+            padding: 32px;
+            position: relative;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        .project-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--accent-color), rgba(252, 237, 37, 0.7));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            flex-shrink: 0;
+            box-shadow: 0 4px 15px rgba(252, 237, 37, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover .project-icon {
+            transform: rotate(5deg) scale(1.1);
+            box-shadow: 0 6px 20px rgba(252, 237, 37, 0.4);
+        }
+
+        .project-title-wrapper {
+            flex: 1;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 8px;
+            font-weight: 600;
+            line-height: 1.3;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-description {
+            color: #4a5568;
+            margin-bottom: 24px;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .project-tag {
+            background: #f1f5f9;
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .project-tag:hover {
+            background: rgba(252, 237, 37, 0.2);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(252, 237, 37, 0.2);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 12px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(252, 237, 37, 0.2);
+        }
+
+        .project-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .project-link:hover {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(252, 237, 37, 0.3);
+            border-color: var(--accent-color);
+        }
+
+        .project-link i {
+            font-size: 1rem;
+        }
+
+        /* Project Filters */
+        .project-filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 25px;
+            border-radius: 30px;
+            background: rgba(98, 181, 147, 0.2);
+            border: 1px solid rgba(252, 237, 37, 0.3);
+            color: var(--text-color);
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background: rgba(252, 237, 37, 0.1);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 15px rgba(252, 237, 37, 0.3);
+        }
+
+        /* Project Card Animation */
+        .project-card.hide {
+            display: none;
+        }
+
+        .project-card.show {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        /* Reviews Section */
+        #reviews {
+            background: linear-gradient(180deg, rgba(33, 119, 86, 0.95) 0%, var(--dark-color) 100%);
+            position: relative;
+        }
+
+        #reviews::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 30% 40%, rgba(98, 181, 147, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(252, 237, 37, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .reviews-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .review-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(252, 237, 37, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: linear-gradient(145deg, rgba(98, 181, 147, 0.1) 0%, rgba(33, 119, 86, 0.1) 100%);
+            /* backdrop-filter: blur(10px); Removed for performance */
+        }
+
+        .review-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(252, 237, 37, 0.4),
+                0 0 30px rgba(252, 237, 37, 0.2);
+        }
+
+        .review-image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 80%;
+            overflow: hidden;
+            background: rgba(33, 119, 86, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .review-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 85%;
+            max-height: 85%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.4s ease;
+        }
+
+        .review-item:hover .review-image {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        .review-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 0%, rgba(33, 119, 86, 0.7) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .review-item:hover .review-overlay {
+            opacity: 1;
+        }
+
+        .review-icon {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+        }
+
+        .review-item:hover .review-icon {
+            transform: scale(1);
+        }
+
+        /* Lightbox for review images */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 10px 50px rgba(252, 237, 37, 0.3);
+            animation: zoomIn 0.3s ease;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            color: var(--accent-color);
+            font-size: 3rem;
+            font-weight: 300;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            z-index: 10000;
+        }
+
+        .lightbox-close:hover {
+            transform: rotate(90deg);
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .contact-info {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .contact-text h4 {
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .contact-text p {
+            color: var(--text-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--nav-bg);
+            color: #ffffff;
+            padding: 60px 0 30px;
+            border-top: 1px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: var(--card-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                padding: 0.5rem 0;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header {
+                padding: 100px 0 60px;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+                gap: 30px;
+            }
+
+            .project-card {
+                border-radius: 20px;
+            }
+
+            .project-content {
+                padding: 24px;
+            }
+
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .project-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 1.3rem;
+            }
+
+            .project-title {
+                font-size: 1.3rem;
+            }
+
+            .project-links {
+                flex-direction: column;
+            }
+
+            .project-link {
+                width: 100%;
+            }
+
+            .reviews-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                padding: 10px;
+            }
+
+            .review-image-wrapper {
+                padding-top: 80%;
+            }
+
+            .review-image {
+                max-width: 80%;
+                max-height: 80%;
+            }
+
+            .lightbox-close {
+                top: 20px;
+                right: 20px;
+                font-size: 2.5rem;
+            }
+
+            .lightbox-content {
+                max-width: 95%;
+                max-height: 85%;
+            }
+
+            .project-image-container {
+                height: 180px;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                SK
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="#about">
+                        <i class="fas fa-user"></i>
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fas fa-magic"></i>
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        <i class="fas fa-history"></i>
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="#insights">
+                        <i class="fas fa-lightbulb"></i>
+                        Insights
+                    </a>
+                </li>
+                <li>
+                    <a href="#education">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </a>
+                </li>
+                <li>
+                    <a href="#footer">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="parallax-bg">
+            <div class="parallax-layer" data-speed="0.5">
+                <div class="parallax-circle parallax-circle-1"></div>
+                <div class="parallax-circle parallax-circle-2"></div>
+            </div>
+            <div class="parallax-layer" data-speed="0.3">
+                <div class="parallax-circle parallax-circle-3"></div>
+                <div class="parallax-circle parallax-circle-4"></div>
+            </div>
+            <div class="parallax-layer" data-speed="0.7">
+                <div class="parallax-shape parallax-shape-1"></div>
+                <div class="parallax-shape parallax-shape-2"></div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="avater.jpeg" class="profile-img" alt="Sahar Fathy Kahla">
+            <h1>Sahar Fathy Kahla</h1>
+            <p>Account Manager | Social Media Specialist</p>
+            <div class="cta-buttons">
+                <a href="#experience" class="cta-btn primary-btn">My Work</a>
+                <a href="#footer" class="cta-btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Outstanding student at the Faculty of Commerce (English Section), Damanhour University.
+                        I possess intensive practical experience in digital marketing and client account management.
+                    </p>
+                    <p style="margin-top: 15px;">
+                        I specialize in bridging the gap between executive client goals and creative content strategies.
+                        Expert in Brand Identity construction and managing paid advertising campaigns.
+                    </p>
+                    <p style="margin-top: 15px;">
+                        I bring exceptional communication skills to team management and direct client relations,
+                        with a high proficiency in extracting client requirements and managing expectations.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">+1</div>
+                        <p>Year Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <p>Account Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Competencies</h2>
+                <p>A range of professional competencies in account management and digital marketing</p>
+            </div>
+            <div class="skills-container"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <!-- Category 1 -->
+                <div class="skill-category">
+                    <h3
+                        style="font-size: 1.6rem; color: var(--primary-color); margin-bottom: 25px; border-bottom: 1px solid rgba(10, 25, 47, 0.1); padding-bottom: 15px;">
+                        <i class="fas fa-tasks" style="margin-right: 10px;"></i> Account Management & Planning
+                    </h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li
+                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
+                            <span><strong>Account Management:</strong> High skill in extracting client requirements and
+                                managing
+                                expectations.</span>
+                        </li>
+                        <li
+                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
+                            <span><strong>Strategic Planning:</strong> Developing complete marketing plans based on
+                                market
+                                and competitors.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="skill-category">
+                    <h3
+                        style="font-size: 1.6rem; color: var(--primary-color); margin-bottom: 25px; border-bottom: 1px solid rgba(10, 25, 47, 0.1); padding-bottom: 15px;">
+                        <i class="fas fa-chart-pie" style="margin-right: 10px;"></i> Platform Management & Analysis
+                    </h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li
+                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
+                            <span><strong>Platform Management:</strong> Professional page management, building digital
+                                identity
+                                and increasing engagement.</span>
+                        </li>
+                        <li
+                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
+                            <span><strong>Analysis & Metrics:</strong> Ability to read campaign data and analyze
+                                performance
+                                for continuous improvement.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="skill-category">
+                    <h3
+                        style="font-size: 1.6rem; color: var(--primary-color); margin-bottom: 25px; border-bottom: 1px solid rgba(10, 25, 47, 0.1); padding-bottom: 15px;">
+                        <i class="fas fa-user-friends" style="margin-right: 10px;"></i> Teamwork & Flexibility
+                    </h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li
+                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
+                            <span><strong>Flexibility:</strong> highly flexible personality in dealing with work
+                                pressure and market
+                                changes.</span>
+                        </li>
+                        <li
+                            style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 5px;"></i>
+                            <span><strong>Communication Skills:</strong> Managing work teams and direct professional
+                                interaction
+                                with clients.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 60px;">
+                <h2>Professional Experience</h2>
+                <p>A comprehensive overview of my career in marketing and account management</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Role 1: Media Production -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="project-title-wrapper">
+                                <h3 class="project-title">Account Manager & Social Media Specialist</h3>
+                                <div class="project-tags">
+                                    <span class="project-tag"><i class="fas fa-building" style="margin-right: 5px;"></i>
+                                        Media Production Co.</span>
+                                    <span class="project-tag"><i class="fas fa-calendar-alt"
+                                            style="margin-right: 5px;"></i> 6 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Responsible for account management and direct client communication. Transforming briefs into
+                            action plans, building brand identity, and full social media management. Setting marketing
+                            strategies and monitoring implementation to ensure goal achievement.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Role 2: Marketing Agency -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-ad"></i>
+                            </div>
+                            <div class="project-title-wrapper">
+                                <h3 class="project-title">Account Manager</h3>
+                                <div class="project-tags">
+                                    <span class="project-tag"><i class="fas fa-briefcase"
+                                            style="margin-right: 5px;"></i> Marketing Agency</span>
+                                    <span class="project-tag"><i class="fas fa-calendar-alt"
+                                            style="margin-right: 5px;"></i> 6 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Managing client relationships and ensuring satisfaction. Serving as an effective bridge
+                            between clients and creative teams to ensure accurate execution, quality control, and timely
+                            delivery of campaigns.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Role 3: Freelance -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="project-title-wrapper">
+                                <h3 class="project-title">Freelance Specialist</h3>
+                                <div class="project-tags">
+                                    <span class="project-tag"><i class="fas fa-user-circle"
+                                            style="margin-right: 5px;"></i> Self-Employed</span>
+                                    <span class="project-tag"><i class="fas fa-chart-line"
+                                            style="margin-right: 5px;"></i> Media Buying</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Full management of individual client accounts including strategy, content creation, and
+                            execution. Planning paid advertising campaigns (Media Buying) and analyzing performance
+                            metrics to optimize ROI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="insights" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Insights & Portfolio</h2>
+                <p>Strategic analysis, leadership philosophy, and advertising projects</p>
+            </div>
+
+            <!-- Part 1: Advertising Campaigns -->
+            <div class="category-group" style="margin-bottom: 60px;">
+                <h3
+                    style="color: var(--accent-color); font-size: 1.8rem; margin-bottom: 30px; border-left: 4px solid var(--accent-color); padding-left: 15px;">
+                    Advertising Campaigns</h3>
+                <div class="projects-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="project-card">
+                        <img src="ads/IMG_9088.PNG" alt="Ad Campaign"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
+                    <div class="project-card">
+                        <img src="ads/IMG_9089.PNG" alt="Ad Campaign"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
+                    <div class="project-card">
+                        <img src="ads/IMG_9770.PNG" alt="Ad Campaign"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
+                    <div class="project-card">
+                        <img src="ads/IMG_9771.PNG" alt="Ad Campaign"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
+                    <div class="project-card">
+                        <img src="ads/IMG_9772.PNG" alt="Ad Campaign"
+                            style="width: 100%; height: auto; display: block;">
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: 0; height: 1px; background: rgba(10, 25, 47, 0.1); margin: 60px 0;">
+
+            <!-- Insights Content -->
+            <div class="insights-container" dir="rtl" style="text-align: right;">
+                <div class="projects-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+
+                    <!-- Card 1: Market Myths -->
+                    <div class="project-card" style="padding: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 20px; font-size: 1.4rem;">1- "لو عملت
+                            اجمد منتج في العالم الناس هتجري تشتري "وهم!😱</h4>
+                        <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">في البيزنس لو عملت منتج متوسط
+                            في سوق صح هيكسب<br>ولو عملت منتج عالمي في سوق غلط هيموت<br>الفرق مش في جودة المنتج الفرق في
+                            حجم المشكله البتعالجها</p>
+                        <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">عشان تختار سوق صح لازم تبعد
+                            عن القشور و تدخل في ال inefficiency( الفشل التشغيلي) اللي بيخسر الناس فلوس</p>
+                        <p
+                            style="font-size: 1rem; line-height: 1.8; margin-bottom: 15px; font-weight: bold; color: var(--accent-color);">
+                            تعالي كدا اقولك مشكلة قطاع قطاع:</p>
+                        <div
+                            style="font-size: 0.95rem; opacity: 0.9; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 15px;">
+                            <p style="margin-bottom: 15px;"><strong>1- قطاع الملابس:</strong> مشكلة قطاع الملابس مش في
+                                التصاميم مشكلة مش في ان شكل القطعه وحش( ممكن يكون جزء بسيط) المشكله بتبقي في السيوله
+                                المحبوسه في الستوك (dead inventory ). يعني مثلا تطلع كولكشن مقاسات معينه و تخلص (out of
+                                stock ) و مقاسات تانيه تلبس فيها للموسم الجاي. طب هتقولي الحل هنا اي؟ انت محتاج حل
+                                استراتيجي سوق محتاجه ال هو نظام توقع الطلب (demand forecasting) او ادارة مخرون ذكيه تضمن
+                                للبراند انو ميكررش الغلط و يحول الستوك النايم لسيوله في اسرع وقت.</p>
+                            <p style="margin-bottom: 15px;"><strong>2- قطاع المطاعم:</strong> المطاعم مش بتقفل عشان
+                                الاكل وحش. ممكن من مشاكلها ان تطبيقات الدليفري بتسحب عمولة (25-35%) وده بياكل صافي
+                                الربح. ولله انا كمان مش عارف اعمل اي😅</p>
+                            <p style="margin-bottom: 15px;"><strong>3- قطاع الكافيهات:</strong> مشكله مش في ديكور كافيه،
+                                الفكرة في (table turnover rate) و قيمة الفاتوره. يعني العميل يقعد مثلا ٤ ساعات و يطلب
+                                طلب واحد 50ج في وقت الكافيه محتاج يبيع فيه 500 للترابيزه دي يغطي مصاريفه. الحل ممكن تصمم
+                                تجربة المستخدم و منيو يشجع علي upselling او تخصيص مساحات عمل ( work friendly zones)
+                                بإشتراك او حد ادني للطلب عشان تتحكم في مدة القعده.</p>
+                            <p style="font-weight: bold; color: var(--accent-color); margin-top: 15px;">السؤال المهم بقا
+                                انت شايف اكتر قطاع مظلوم و مليان مشاكل اي؟</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Market Validation -->
+                    <div class="project-card" style="padding: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 20px; font-size: 1.4rem;">2- متسألش الناس
+                            اي رأيكم</h4>
+                        <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">الكل هيجانلك و يقولك فكرتك
+                            تجنن اسألهم بتدفعوا كام عشان تشتروا الحاجه دي لو مش بيدفعوا فلوس فيها يبقي مش محتاجنها و مش
+                            هيشتروا منك انت كمان.</p>
+                        <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">لو لقيت منافسين افرح وجود
+                            منافسين دا معناه ان السوق دا فيه فلوس مش معناه انهم هيهزموك او انك تفشل شطارتك انك تعرف تلمع
+                            وسطهم تقدم حاجه هما ناسينها.</p>
+                        <p style="font-size: 1rem; line-height: 1.8; font-weight: bold; color: var(--accent-color);">لو
+                            عندك فكرة مشروع شاركنا بيها و هنقولك دي سوقها ايه👇</p>
+                    </div>
+
+                    <!-- Card 3: Leadership -->
+                    <div class="project-card" style="padding: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 20px; font-size: 1.4rem;">3- انت ليدر ولا
+                            مجرد قائد بيهبد؟</h4>
+                        <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">القائد الصح مش زي ما انتو
+                            فاكرين🚫 بما اننا في رمضان و فرق العمل التطوعي كلها شباب هنتكلم عن ازاي تبقي قائد فريق
+                            حقيقي: <strong>Delegation و empowerment</strong>.</p>
+                        <div style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 15px;">
+                            <p style="margin-bottom: 15px;"><strong>التفويض:</strong> انك تقول لحد خلص لي دي. انك تدي
+                                لحد مهمه محدده يعملها بس انت صاحب القرار انت صاحب الطريقه و النتيجه و هو التنفيذ. لما
+                                يكون عندك ضغط شغل و مهام روتينيه محتاجه تخلص او لما بتعلم حد لسه جديد ازاي يعمل
+                                حاجه.<br>دا مفيد عشان بيعلمك ادارة الوقت بدل ما تعملها بنفسك و تحرق وقت ف انت بتوزع
+                                المجهود. بس المهم اوعي تكون دايما مفوض و تخنق اللي معاك.</p>
+                            <p><strong>ال empowerment (التمكين):</strong> التمكين انت مش بتدي مهمه انت بتدي سُلطة. دي
+                                لما يكون معاك ناس شاطره عندها خبره بتديهم الهدف النهائي نزود المبيعات 20% و تديهم حرية
+                                الوسيله. و كدا انت بتبني جيل من القادة لو انت صاحب شركة او ليدر عمل تطوعي.</p>
+                        </div>
+                        <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">التمكين بيخلي الموظفين يحسوا
+                            ان الشركه شركتهم فيبدعوا او ان التيم دا عيلتهم ف يجتهدوا.</p>
+                        <p style="font-size: 1rem; line-height: 1.8; font-weight: bold; color: var(--accent-color);">لو
+                            استفدت اعمل فولو هنتكلم كتير عن اليجهزم لسوق العمل💪</p>
+                        <p style="margin-top: 15px; font-size: 0.85rem; opacity: 0.7;">#محمود_عرب #Dr_shrimpo</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education & Voluntary Work</h2>
+            </div>
+            <div class="skills-container"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Education -->
+                <div class="skill-category" style="background: var(--light-color); border: 1px solid #e2e8f0;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px;">
+                        <i class="fas fa-graduation-cap"></i> Education
+                    </h3>
+                    <p style="font-weight: bold; font-size: 1.1rem;">Bachelor of Commerce (English Section)</p>
+                    <p style="color: #4a5568;">Damanhour University | 2nd Year.</p>
+                </div>
+                <!-- Voluntary Work -->
+                <div class="skill-category" style="background: var(--light-color); border: 1px solid #e2e8f0;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px;">
+                        <i class="fas fa-users"></i> Voluntary Work
+                    </h3>
+                    <p style="font-weight: bold;">Rotaract Damanhour</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 10px;">
+                        <li style="margin-bottom: 8px;"><i class="fas fa-star"
+                                style="color: var(--accent-color); font-size: 0.8rem;"></i> Club Services Chair
+                            (2025/2026)</li>
+                        <li><i class="fas fa-star" style="color: var(--accent-color); font-size: 0.8rem;"></i>
+                            Secretary Designate (Soon)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sahar Fathy Kahla</h3>
+                    <p>Account Manager | Social Media Specialist</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Me</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/201155730844" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Sahar Fathy Kahla. All rights reserved.</p>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation to elements when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        });
+
+        document.querySelectorAll('.section').forEach((section) => {
+            observer.observe(section);
+        });
+
+        // Update skill bars width on scroll
+        const skillBars = document.querySelectorAll('.skill-progress');
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.parentElement.previousElementSibling.lastElementChild.textContent;
+                }
+            });
+        });
+
+        skillBars.forEach(bar => {
+            skillObserver.observe(bar);
+        });
+
+        // Mouse Parallax Effect for Hero Section
+        const header = document.querySelector('header');
+        const parallaxLayers = document.querySelectorAll('.parallax-layer');
+
+        if (header && parallaxLayers.length > 0) {
+            header.addEventListener('mousemove', (e) => {
+                const rect = header.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const moveX = (x - centerX) / centerX;
+                const moveY = (y - centerY) / centerY;
+
+                parallaxLayers.forEach((layer, index) => {
+                    const speed = parseFloat(layer.getAttribute('data-speed')) || 0.5;
+                    const offsetX = moveX * 50 * speed;
+                    const offsetY = moveY * 50 * speed;
+
+                    layer.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+                });
+            });
+
+            // Reset on mouse leave
+            header.addEventListener('mouseleave', () => {
+                parallaxLayers.forEach(layer => {
+                    layer.style.transform = 'translate(0, 0)';
+                });
+            });
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
